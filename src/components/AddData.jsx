@@ -2,7 +2,7 @@ import React from "react";
 import { useData } from "./UserData";
 import { useState } from "react";
 
-const AddDataToTable = () => {
+const AddData = () => {
   const [newUser, setNewUser] = useState({
     username: "",
     lastName: "",
@@ -77,4 +77,4 @@ const AddDataToTable = () => {
   );
 };
 
-export default AddDataToTable;
+export default AddData;

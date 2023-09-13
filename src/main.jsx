@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Owner from "./components/Owner.jsx";
 import Home from "./components/Home.jsx";
 import UserData from "./components/UserData.jsx";
-import AddDataToTable from "./components/AddDataToTable.jsx";
+import AddDataToTable from "./components/AddData.jsx";
 import AdminDataTable from "./components/AdminDataTable.jsx";
 const router = createBrowserRouter([
   {
