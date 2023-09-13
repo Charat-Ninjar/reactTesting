@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     element: <Owner />,
   },
   {
-    path: "/Home",
+    path: "/AddDataToTable",
     element:(
       <UserData>
         <AddDataToTable />
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Home",
+    path: "/DataTable",
     element: (
       <UserData>
         <DataTable />
