@@ -1,7 +1,7 @@
 import React from "react";
 import { useData } from "./UserData";
 
-const DataTable = () => {
+const AdminDataTable = () => {
   const { data, deleteData } = useData();
 
   const handleDelete = (index) => {
@@ -38,4 +38,4 @@ const DataTable = () => {
   );
 };
 
-export default DataTable;
+export default AdminDataTable;

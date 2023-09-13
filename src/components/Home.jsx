@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../Layout";
-import DataTable from "./DataTable";
+import DataTable from "./AdminDataTable";
 import { useState } from "react";
 import UserDataTable from "./UserDataTable";
+import AddDataToTable from "./AddDataToTable";
 
 const Home = () => {
   const [showUserTable, setShowUserTable] = useState("default");
@@ -38,6 +39,7 @@ const Home = () => {
         <UserDataTable />
       ) : showUserTable == "admin" ? (
         <>
+          <AddDataToTable />
           <DataTable />
         </>
       ) : (
