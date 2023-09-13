@@ -6,13 +6,12 @@ const UserDataTable = () => {
   return (
     <div className="data-table">
       <div className="user-data-table">
-        <h1>user table</h1>
         <table>
           <thead>
             <tr>
-              <th>Name</th>
+              <th className="left-table-head">Name</th>
               <th>Last Name</th>
-              <th>Position</th>
+              <th className="right-table-head">Position</th>
             </tr>
           </thead>
           <tbody>

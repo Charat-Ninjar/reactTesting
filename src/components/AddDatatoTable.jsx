@@ -36,14 +36,14 @@ const AddDataToTable = () => {
   };
   return (
 
-    <div className="create-form-container">
-      <h3>Create User Here</h3>
+    <div className="create-form-container m-4 ">
+      <h3 style={{color:"black"}}>Create User Here</h3>
       <form className="form-box">
         <input
           type="text"
           name="username"
           placeholder="Name"
-          className="form-control"
+          className="form-control input-box"
           value={newUser.username}
           onChange={handleInputNewUserChange}
         />
@@ -51,7 +51,7 @@ const AddDataToTable = () => {
           type="text"
           name="lastName"
           placeholder="Last Name"
-          className="form-control"
+          className="form-control input-box"
           value={newUser.lastName}
           onChange={handleInputNewUserChange}
         />
@@ -59,19 +59,19 @@ const AddDataToTable = () => {
           type="text"
           name="position"
           placeholder="Position"
-          className="form-control"
+          className="form-control input-box"
           value={newUser.position}
           onChange={handleInputNewUserChange}
         />
-        
-      </form>
-      <button
+        <button
           type="button"
           className="btn btn-primary"
           onClick={insertDataFromInputToDatabase}
         >
           Save
         </button>
+      </form>
+      
     </div>
 
   );

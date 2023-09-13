@@ -3,9 +3,11 @@ import UserData, { useData } from "./UserData";
 import AddDataToTable from "./AddDataToTable";
 
 const DataTable = () => {
-  const { data } = useData();
+  const { data, deleteData } = useData();
 
-  //   const { addData } = useData();
+  const handleDelete = (index) => {
+    deleteData(index)
+  }
 
   return (
     <div>
@@ -15,19 +17,19 @@ const DataTable = () => {
           <table>
             <thead>
               <tr>
-                <th>Name</th>
+                <th className="left-table-head">Name</th>
                 <th>Last Name</th>
                 <th>Position</th>
-                <th>Action</th>
+                <th className="right-table-head">Action</th>
               </tr>
             </thead>
-            <tbody>
-              {data.map((user) => (
+            <tbody className="table-body">
+              {data.map((user, index) => (
                 <tr key={user.id}>
                   <td>{user.username}</td>
                   <td>{user.lastName}</td>
                   <td>{user.position}</td>
-                  <td>Delete</td>
+                  <td><div className="delete-data" onClick={() => handleDelete(index)}>Delete</div></td>
                 </tr>
               ))}
             </tbody>

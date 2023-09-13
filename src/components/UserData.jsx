@@ -22,8 +22,16 @@ const UserData = ({ children }) => {
     setData((prevData) => [...prevData, newData]);
   };
 
+  const deleteData = (index) => {
+    setData((prevData) => {
+      const newData = [...prevData];
+      newData.splice(index, 1);
+      return newData;
+    });
+  };
+
   return (
-    <DataContext.Provider value={{ data, addData }}>
+    <DataContext.Provider value={{ data, addData, deleteData }}>
       {children}
     </DataContext.Provider>
   );
