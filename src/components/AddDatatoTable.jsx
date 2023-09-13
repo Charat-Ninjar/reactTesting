@@ -1,5 +1,5 @@
 import React from "react";
-import UserData, { useData } from "./UserData";
+import { useData } from "./UserData";
 import { useState } from "react";
 
 const AddDataToTable = () => {
