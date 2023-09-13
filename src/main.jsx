@@ -6,8 +6,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Owner from "./components/Owner.jsx";
 import Home from "./components/Home.jsx";
 import UserData from "./components/UserData.jsx";
-import DataTable from "./components/DataTable.jsx";
-import AddDataToTable from "./components/AddDataToTable.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,22 +19,7 @@ const router = createBrowserRouter([
     path: "/Owner",
     element: <Owner />,
   },
-  {
-    path: "/AddDataToTable",
-    element:(
-      <UserData>
-        <AddDataToTable />
-      </UserData>
-    ),
-  },
-  {
-    path: "/DataTable",
-    element: (
-      <UserData>
-        <DataTable />
-      </UserData>
-    ),
-  },
+  
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
