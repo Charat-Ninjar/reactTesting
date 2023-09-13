@@ -3,8 +3,6 @@ import Layout from "../Layout";
 import DataTable from "./DataTable";
 import { useState } from "react";
 import UserDataTable from "./UserDataTable";
-import UserData from "./UserData";
-import AddDataToTable from "./AddDataToTable";
 
 const Home = () => {
   const [showUserTable, setShowUserTable] = useState("default");
