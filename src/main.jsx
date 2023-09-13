@@ -7,6 +7,7 @@ import Owner from "./components/Owner.jsx";
 import Home from "./components/Home.jsx";
 import UserData from "./components/UserData.jsx";
 import DataTable from "./components/DataTable.jsx";
+import AddDataToTable from "./components/AddDatatoTable.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
       </UserData>
     ),
   },
+  
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />

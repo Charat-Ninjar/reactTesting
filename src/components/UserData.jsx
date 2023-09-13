@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 
-export const DataContext = createContext();
+const DataContext = createContext();
 
 const UserData = ({ children }) => {
 
