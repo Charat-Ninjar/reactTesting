@@ -21,23 +21,23 @@ const router = createBrowserRouter([
     path: "/Owner",
     element: <Owner />,
   },
-  // ,
-  // {
-  //   path: "/Home",
-  //   element:(
-  //     <UserData>
-  //       <AddDataToTable />
-  //     </UserData>
-  //   ),
-  // },
-  // {
-  //   path: "/Home",
-  //   element: (
-  //     <UserData>
-  //       <DataTable />
-  //     </UserData>
-  //   ),
-  // },
+  ,
+  {
+    path: "/Home",
+    element:(
+      <UserData>
+        <AddDataToTable />
+      </UserData>
+    ),
+  },
+  {
+    path: "/Home",
+    element: (
+      <UserData>
+        <DataTable />
+      </UserData>
+    ),
+  },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
