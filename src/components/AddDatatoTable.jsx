@@ -4,14 +4,19 @@ import { useState } from "react";
 
 const AddDataToTable = () => {
   const [newUser, setNewUser] = useState({
-    name: "",
+    username: "",
     lastName: "",
     position: "",
   });
+  // const [userName, setUserName] = useState();
+  // const [userLastName, setUserLastName] = useState();
+  // const [userPosition, setUserPosition] = useState();
 
   const { addData } = useData();
-
+  const { data } = useData();
+  
   const handleInputNewUserChange = (event) => {
+    console.log("testnewUser")
     const { name, value } = event.target;
     setNewUser({
       ...newUser,
@@ -20,60 +25,55 @@ const AddDataToTable = () => {
   };
 
   const insertDataFromInputToDatabase = () => {
+    console.log("newUser")
     addData(newUser);
     setNewUser({
-      name: "",
+      username: "",
       lastName: "",
       position: "",
     });
+    console.log(data)
   };
   return (
-    <UserData>
-    <div>
-      <h3 className="color:white">Create User Here</h3>
-      <div className="create-form-container">
-        <form className="form-box">
-          <span>
-            <input
-              type="text"
-              placeholder="Name"
-              className="form-control"
-              value={newUser.name}
-              onChange={handleInputNewUserChange}
-            />
-          </span>
-          <span>
-            <input
-              type="text"
-              placeholder="Last Name"
-              className="form-control"
-              value={newUser.lastName}
-              onChange={handleInputNewUserChange}
-            />
-          </span>
-          <span>
-            <input
-              type="text"
-              placeholder="Position"
-              className="form-control"
-              value={newUser.position}
-              onChange={handleInputNewUserChange}
-            />
-          </span>
 
-          <span>
-            <button
-              type="button"
-              className="-button"
-              onClick={insertDataFromInputToDatabase}
-            >
-              Save
-            </button>
-          </span>
-        </form>
-      </div>
+    <div className="create-form-container">
+      <h3>Create User Here</h3>
+      <form className="form-box">
+        <input
+          type="text"
+          name="username"
+          placeholder="Name"
+          className="form-control"
+          value={newUser.username}
+          onChange={handleInputNewUserChange}
+        />
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Last Name"
+          className="form-control"
+          value={newUser.lastName}
+          onChange={handleInputNewUserChange}
+        />
+        <input
+          type="text"
+          name="position"
+          placeholder="Position"
+          className="form-control"
+          value={newUser.position}
+          onChange={handleInputNewUserChange}
+        />
+        
+      </form>
+      <button
+          type="button"
+          className="btn btn-primary"
+          onClick={insertDataFromInputToDatabase}
+        >
+          Save
+        </button>
     </div>
-    </UserData>
+
   );
 };
 

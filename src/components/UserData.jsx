@@ -6,18 +6,19 @@ const UserData = ({ children }) => {
 
   const[data, setData] = useState([
     {
-      name: "MR.Peth",
+      username: "MR.Peth",
       lastName: "123",
       position: "admin",
     },
     {
-      name: "MR.Ging",
+      username: "MR.Ging",
       lastName: "123",
       position: "Super Admin",
     },
   ]);
 
   const addData = (newData) => {
+    console.log("add data")
     setData((prevData) => [...prevData, newData]);
   };
 

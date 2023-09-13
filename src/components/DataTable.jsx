@@ -1,63 +1,38 @@
 import React, { useState } from "react";
 import UserData, { useData } from "./UserData";
-import AddDataToTable from "./AddDatatoTable";
+import AddDataToTable from "./AddDataToTable";
 
-const DataTable = ({ showUserTable }) => {
+const DataTable = () => {
   const { data } = useData();
 
-//   const { addData } = useData();
-
+  //   const { addData } = useData();
 
   return (
-    <div className="data-table">
-      <div
-        className="user-data-table"
-        style={{ display: showUserTable == "user" ? "block" : "none" }}
-      >
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Last Name</th>
-              <th>Position</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((user) => (
-              <tr key={user.id}>
-                <td>{user.name}</td>
-                <td>{user.lastName}</td>
-                <td>{user.position}</td>
+    <div>
+      <AddDataToTable />
+      <div className="data-table">
+        <div className="admin-data-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+                <th>Action</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <div
-        className="admin-data-table"
-        style={{ display: showUserTable == "admin" ? "block" : "none" }}
-      >
-        <AddDataToTable/>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Last Name</th>
-              <th>Position</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((user) => (
-              <tr key={user.id}>
-                <td>{user.name}</td>
-                <td>{user.lastName}</td>
-                <td>{user.position}</td>
-                <td>Delete</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {data.map((user) => (
+                <tr key={user.id}>
+                  <td>{user.username}</td>
+                  <td>{user.lastName}</td>
+                  <td>{user.position}</td>
+                  <td>Delete</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

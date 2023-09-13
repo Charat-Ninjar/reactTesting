@@ -2,6 +2,10 @@ import React from "react";
 import Layout from "../Layout";
 import DataTable from "./DataTable";
 import { useState } from "react";
+import UserDataTable from "./UserDataTable";
+import UserData from "./UserData";
+import AddDataToTable from "./AddDataToTable";
+
 const Home = () => {
   const [showUserTable, setShowUserTable] = useState("default");
   const [title, setTitle] = useState("React - Assessment");
@@ -12,10 +16,9 @@ const Home = () => {
     } else if (showUserTable === "user") {
       setTitle("Home - User Sector");
     } else if (showUserTable === "admin") {
-      setTitle("Home - Admin Sector")
+      setTitle("Home - Admin Sector");
     }
   };
-
 
   return (
     <Layout>
@@ -33,7 +36,17 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <DataTable showUserTable={showUserTable} />
+      {showUserTable == "user" ? (
+
+          <UserDataTable />
+
+      ) : showUserTable == "admin" ? (
+
+          <DataTable />
+
+      ) : (
+        ""
+      )}
     </Layout>
   );
 };

@@ -135,3 +135,7 @@ tr:nth-child(even) {
   cursor: pointer;
   font-size: 16px;
 }
+
+.create-form-container {
+  color: white;
+}
