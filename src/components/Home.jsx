@@ -3,7 +3,8 @@ import Layout from "../Layout";
 import DataTable from "./DataTable";
 import { useState } from "react";
 import UserDataTable from "./UserDataTable";
-import AddDataToTable from "./AddDataToTable"
+import AddDataToTable from "./AddDataToTable.jsx";
+
 const Home = () => {
   const [showUserTable, setShowUserTable] = useState("default");
   const [title, setTitle] = useState("React - Assessment");
