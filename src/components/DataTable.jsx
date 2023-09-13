@@ -1,6 +1,6 @@
 import React from "react";
 import { useData } from "./UserData";
-import AddDataToTable from "./AddDataToTable";
+import AddDataToTable from "/src/components/AddDataToTable.jsx";
 
 const DataTable = () => {
   const { data, deleteData } = useData();
