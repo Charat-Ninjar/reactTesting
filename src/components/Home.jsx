@@ -3,7 +3,7 @@ import Layout from "../Layout";
 import DataTable from "./DataTable";
 import { useState } from "react";
 import UserDataTable from "./UserDataTable";
-
+import AddDataToTable from "./AddDataToTable"
 const Home = () => {
   const [showUserTable, setShowUserTable] = useState("default");
   const [title, setTitle] = useState("React - Assessment");
@@ -35,14 +35,12 @@ const Home = () => {
         </div>
       </div>
       {showUserTable == "user" ? (
-
-          <UserDataTable />
-
+        <UserDataTable />
       ) : showUserTable == "admin" ? (
-
-
+        <>
+          <AddDataToTable />
           <DataTable />
-
+        </>
       ) : (
         ""
       )}

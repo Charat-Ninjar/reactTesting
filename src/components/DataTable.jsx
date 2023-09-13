@@ -1,6 +1,5 @@
 import React from "react";
 import { useData } from "./UserData";
-import AddDataToTable from "/src/components/AddDataToTable.jsx";
 
 const DataTable = () => {
   const { data, deleteData } = useData();
@@ -11,7 +10,6 @@ const DataTable = () => {
 
   return (
     <div>
-      <AddDataToTable />
       <div className="data-table">
         <div className="admin-data-table">
           <table>
