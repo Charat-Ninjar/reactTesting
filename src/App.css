@@ -1,0 +1,136 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 12px;
+  height: 50px;
+  color: white;
+  background-color: #343540;
+}
+
+.owner {
+  color: white;
+
+}
+
+.button-container-home {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 200px;
+}
+
+.data-table td {
+  background-color: white;
+  height: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 10px;
+  margin-top: 50px;
+
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: #888;
+}
+
+th {
+  background-color: #343540;
+  /* border: 1px solid #dddddd; */
+  text-align: center;
+  padding: 8px;
+
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+.admin-data-table, .user-data-table {
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333; /* Dark border color */
+  border-radius: 10px;
+  background-color: #444653; /* Dark background color */
+  color: #fff; /* Text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Darker shadow */
+  font-size: 16px;
+  outline: none;
+}
+
+.save-button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff; /* Accent color for contrast */
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
