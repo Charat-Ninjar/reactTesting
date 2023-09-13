@@ -7,7 +7,6 @@ const DataTable = ({ showUserTable }) => {
     lastName: "",
     position: "",
   });
-  const [name, setName] = useState()
 
   const { data } = useData();
   const { addData } = useData();
@@ -32,7 +31,7 @@ const DataTable = ({ showUserTable }) => {
     <div className="data-table">
       <div
         className="user-data-table"
-        style={{ display: showUserTable ? "none" : "block" }}
+        style={{ display: showUserTable === "default" && "admin" ? "none" : "block" }}
       >
         <table>
           <thead>
@@ -55,7 +54,7 @@ const DataTable = ({ showUserTable }) => {
       </div>
       <div
         className="admin-data-table"
-        style={{ display: showUserTable ? "block" : "none" }}
+        style={{ display: showUserTable === "admin" || "" ? "block" : "none" }}
       >
         <h3 className="color:white">Create User Here</h3>
         <div className="create-form-container">
@@ -87,9 +86,7 @@ const DataTable = ({ showUserTable }) => {
                 onChange={handleInputNewUserChange}
               />
             </span>
-            <div>
-              <input type="text" />
-            </div>
+            
             <span>
               <button
               type="button"
