@@ -6,7 +6,9 @@ import AdminDataTable from "./AdminDataTable";
 
 const Home = () => {
   const [showUserTable, setShowUserTable] = useState("default");
+  
   const [title, setTitle] = useState("React - Assessment");
+
   const toggleSection = (showUserTable) => {
     setShowUserTable(showUserTable);
     if (showUserTable === "default") {

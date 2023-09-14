@@ -1,8 +1,10 @@
+
 #root {
   /* max-width: 1280px; */
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
+  
 }
 
 h3 {
@@ -67,9 +69,9 @@ h3 {
 
 .owner img {
   border-radius: 10px;
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .button-container-home {
@@ -90,6 +92,9 @@ table {
   margin: 20px auto;
   border-radius: 10px;
   margin-top: 50px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
 
 }
 
@@ -114,7 +119,8 @@ tr:nth-child(even) {
 }
 
 
-.admin-data-table, .user-data-table {
+.admin-data-table,
+.user-data-table {
   color: white;
   text-align: left;
   margin-left: 20px;
@@ -128,16 +134,17 @@ tr:nth-child(even) {
 }
 
 .input-box {
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-  
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+
 }
 
-.save-button{
+.save-button {
   padding: 10px 20px;
   border: none;
-  background-color: #007bff; /* Accent color for contrast */
+  background-color: #007bff;
+  /* Accent color for contrast */
   color: #fff;
   border-radius: 10px;
   cursor: pointer;
@@ -157,8 +164,9 @@ tr:nth-child(even) {
 }
 
 h6 {
-  color:black;
+  color: black;
 }
+
 .bio {
   color: black;
   margin: 0px 250px;

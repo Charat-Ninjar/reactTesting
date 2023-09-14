@@ -6,12 +6,15 @@ const Owner = () => {
     <Layout>
       <div className="owner mt-5">
         <h1>Ninjar Group I - 9</h1>
-        <img src="/gilberth2.jpg" className="w-25 mt-4 "></img>
-        <h6 className="mt-5"><strong>Short Biography</strong></h6>
+        <img src="/ninjar.jpg" className="w-25 mt-4 "></img>
+        <h6 className="mt-5">
+          <strong>Short Biography</strong>
+        </h6>
         <p className=" bio">
-          I would never fall in love again until I found her I said, "I would
-          never fall unless it's you I fall into" I was lost within the
-          darkness, but then I found her I found you
+          Hi, my name is Ninjar, and I'm a learner in the Software Developer
+          program at Generation Thailand. I'm passionate about coding and always
+          eager to embrace new challenges in the world of technology. 
+          Nice to meet you.
         </p>
       </div>
     </Layout>
