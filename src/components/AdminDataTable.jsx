@@ -29,7 +29,7 @@ const AdminDataTable = () => {
                   <td>{user.username}</td>
                   <td>{user.lastName}</td>
                   <td>{user.position}</td>
-                  <td><div className="delete-data" onClick={() => handleDelete(index)}>Delete</div></td>
+                  <td><div className="glow-on-hover" onClick={() => handleDelete(index)}>Delete</div></td>
                 </tr>
               ))}
             </tbody>

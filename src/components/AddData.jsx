@@ -13,7 +13,6 @@ const AddData = () => {
   // const [userPosition, setUserPosition] = useState();
 
   const { addData } = useData();
-  const { data } = useData();
   
   const handleInputNewUserChange = (event) => {
     console.log("testnewUser")

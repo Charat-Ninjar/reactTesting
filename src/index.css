@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  background-color: #393838;
 }
 
 button:focus,
@@ -89,12 +89,14 @@ button:focus-visible {
   }
 }
 
-.delete-data {
-  color: red;
+
+.glow-on-hover {
+  color: #ff0000;
+  transition: text-shadow 0.3s ease;
   text-align: center;
 }
 
-.delete-data:hover {
-  color: red;
-  font-weight: 900;
+.glow-on-hover:hover {
+  text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
+  color: #eb0000;
 }
